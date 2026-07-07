@@ -4,77 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pragya Sharma - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f6f0e6;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    nav {
-      width: 100%;
-      padding: 10px;
-      background: #decdb9;
-      display: flex;
-      justify-content: flex-end;
-      gap: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      font-size: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #OFA4AF;
-      font-weight: bold;
-    }
-    h1 {
-      font-size: 5.5rem;
-      margin: 20px 0 10px;
-    }
-    h2 {
-      font-size: 3.5rem;
-      color: #654321;
-      margin-bottom: 20px;
-      font-weight: normal;
-    }
-    p {
-      max-width: 600px;
-      color:#6543217;
-      font-size: 1rem;
-      margin: 0 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="brand"><span class="logo">Projects</span></div>
+    <div class="nav-links">
+      <a class="btn secondary" href="/">Home</a>
+      <a class="btn secondary" href="aboutme.html">About</a>
+      <a class="btn" href="https://github.com/flowerPower18" target="_blank">GitHub</a>
+    </div>
+  </header>
 
-   <h1>Projects</h1>
-  <h2>Book Store Adapter</h2>
-  <p>
-    One of the recent projects I've worked on this semester is a Book Store Adapter in CPSC 131 (Data Structures). The following project has a custom created DoublyLinkedList class implemented, which is then used within the BooKStore.cpp.
-  </p>
+  <main class="container">
+    <div class="content-section">
+      <h1>Book Store Adapter</h1>
+      <h2>Course project — CPSC 131</h2>
+      <p>One recent project is a Book Store Adapter implemented in C++ using a custom DoublyLinkedList. The project demonstrates data structure design and practical application.</p>
 
-  <div style="text-align:center; margin-top:50px;">
-  <a href="projects.html">
-    <img src="images/code_snippet1.png" alt="Projects" style="width:600px;" />
-  </a>
-</div>
- <p>
-    The following code snippet is from the DoublyLinkedList class, specifically of the insert_after function. The following code block inserts a new node in our list regardless of the position.For example, if there is a current node present in the list, the code block would execute to have the following format: current_node -> new_node -> next_node (if it isn't nullptr). 
-  </p>
+      <div style="margin-top:20px;display:flex;gap:20px;flex-direction:column;align-items:center">
+        <img src="images/code_snippet1.png" alt="Code snippet" style="max-width:100%;border-radius:8px;box-shadow:0 8px 24px rgba(15,23,36,0.08)">
+        <p>The snippet below shows the <em>insert_after</em> function used to add nodes in the linked list.</p>
+        <img src="images/code_snippet2.png" alt="Code snippet 2" style="max-width:100%;border-radius:8px;box-shadow:0 8px 24px rgba(15,23,36,0.08)">
+      </div>
+    </div>
+  </main>
 
-  <div style="text-align:center; margin-top:50px;">
-  <a href="projects.html">
-    <img src="images/code_snippet2.png" alt="Projects" style="width:600px;" />
-  </a>
-</div>
-  <p>
-    The next code snippet is from the BookStore.cpp, which implements the book store class, functioning as a book store essentially. The code block shows how books can actually be sold to the customer, and what the backend would do once the book is given to the customer.
-  </p>
 

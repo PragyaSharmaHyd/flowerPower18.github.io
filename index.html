@@ -4,132 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pragya Sharma - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f6f0e6;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    nav {
-      width: 100%;
-      padding: 20px;
-      background: #decdb9;
-      display: flex;
-      justify-content: flex-end;
-      gap: 30px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      font-size: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #OFA4AF;
-      font-weight: bold;
-    }
-    .profile-pic {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      margin-top: 30px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 20px 0 10px;
-    }
-    h2 {
-      font-size: 1.5rem;
-      color: #654321;
-      margin-bottom: 20px;
-      font-weight: normal;
-    }
-    p {
-      max-width: 600px;
-      color:#6543217;
-      font-size: 1rem;
-      margin: 0 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">Pragya Sharma</span>
+    </div>
+    <div class="nav-links">
+      <a class="btn secondary" href="Resume.html" target="_blank">Resume</a>
+      <a class="btn secondary" href="projects.html">Projects</a>
+      <a class="btn secondary" href="aboutme.html">About</a>
+      <a class="btn" href="https://github.com/flowerPower18" target="_blank">GitHub</a>
+    </div>
+  </header>
 
-<nav>
-  <a href="Resume.html"target="_blank" style="background-color: #654321; color: white; padding: 10px 20px; border-radius: 8px;">
-    Resume</a>
-  
-  <a href="projects.html" target="_blank" style="background-color: #654321; color: white; padding: 10px 20px; border-radius: 8px;">
-    Projects</a>
-  
-  <a href="aboutme.html" target="_blank" style="background-color: #654321; color: white; padding: 10px 20px; border-radius: 8px;">
-  About Me
-</a>
+  <main class="container">
+    <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;">
+      <img src="images/IMG_4714.JPG" alt="My Photo" class="profile-pic">
+      <div>
+        <h1>Pragya Sharma</h1>
+        <h2>A Computer Science student at CSUF</h2>
+        <p>Hello — I'm a first-year Computer Science student at California State University, Fullerton. I build projects that explore data structures and systems.</p>
+        <div style="margin-top:12px;display:flex;gap:8px;">
+          <a class="btn" href="projects.html">See Projects</a>
+          <a class="btn secondary" href="aboutme.html">Learn More</a>
+        </div>
+      </div>
+    </div>
 
-  <a href="https://www.linkedin.com/in/pragya-sharma-5a815323a/" target="_blank" style="background-color:#654321; color: white; padding: 10px 20px; border-radius: 8px;">
-    LinkedIn
-  </a>
-  
-  <a href="https://github.com/flowerPower18" target="_blank" style="background-color: #654321; color: white; padding: 10px 20px; border-radius: 8px;">
-    GitHub
-  </a>
-  
-</nav>
-
-
-  <img src="images/IMG_4714.JPG" alt="My Photo" class="profile-pic">
-
-  <h1>Pragya Sharma</h1>
-  <h2>A Bit About Me</h2>
-  <p>
-    Hello! I am currently a first-year at California State University, Fullerton, majoring in Computer Science. The following attachments are some of my recent works in the past few years.
-  </p>
-
-  <div style="text-align:center; margin-top:40px; position:relative; display:inline-block;">
-  <a href="projects.html">
-    <img src="images/projects.jpg" alt="Projects"
-         style="width:500px; opacity:0.5; display:block;" />
-    <span style="
-      position:absolute;
-      top:50%;
-      left:50%;
-      transform:translate(-50%, -50%);
-      color:white;
-      font-size:36px;
-      font-weight:bold;
-      font-family:sans-serif;
-      text-shadow:2px 2px 4px #000;">
-      Projects
-    </span>
-  </a>
-</div>
-
-  <div style="text-align:center; margin-top:40px; position:relative; display:inline-block;">
-  <a href="aboutme.html">
-    <img src="images/working_background.png" alt="About Me"
-         style="width:500px; opacity:0.5; display:block;" />
-    <span style="
-      position:absolute;
-      top:50%;
-      left:50%;
-      transform:translate(-50%, -50%);
-      color:white;
-      font-size:36px;
-      font-weight:bold;
-      font-family:sans-serif;
-      text-shadow:2px 2px 4px #000;">
-      About Me
-    </span>
-  </a>
-</div>
+    <div class="hero-grid">
+      <a class="hero-card" href="projects.html">
+        <img src="images/projects.jpg" alt="Projects">
+        <div class="overlay">Projects</div>
+      </a>
+      <a class="hero-card" href="aboutme.html">
+        <img src="images/working_background.png" alt="About">
+        <div class="overlay">About Me</div>
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>
